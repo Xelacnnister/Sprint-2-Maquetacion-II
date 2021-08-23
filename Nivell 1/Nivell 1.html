@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+<!-- Our project just needs Font Awesome solid + brand -->
+<script defer src="../node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
+<script defer src="../node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
+<script defer src="../node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/img/favicon-16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="../assets/img/favicon-32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="../assets/img/favicon-64.png" sizes="64x64">
+  <title>Sloth Lovers</title>
+</head>
+<!-- BODY -->
+<body >
+<!-- HEADER -->
+<header>
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid justify-content-end">
+        <a class="navbar-brand" href="#"><img src="../assets/img/slothIcon.png" alt="Sloth face icon" width="50"
+            height="40"></a>
+
+            <!-- <div class="container d-flex"> -->
+              <div class="loginRegistro d-block  me-auto">
+  
+                <!-- Button trigger LOGIN modal -->
+                <button type="button" class="btn btn-primary me-auto" data-bs-toggle="modal" data-bs-target="#logInModal">
+                  Login
+                </button>
+        
+                <!-- LOGIN Modal -->
+                <div class="modal fade" id="logInModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Nombre de Usuario</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuario">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+                          </div>
+                          <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Recuérdame</label>
+                          </div>
+                          <button type="button" class="btn btn-primary">Log In</button>
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Log Out</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <!-- Button trigger REGISTRO modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registroModal"><!--cambiar color button a verde-->
+                  Registro
+                </button>
+        
+                <!-- Modal -->
+                <div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+        
+                        <form>
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuario">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Correo</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Usuario</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuario">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Confirmar Contraseña</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+                          </div>
+        
+                          <button type="button" class="btn btn-primary">Registrarse</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+              </div>
+      
+            <!-- </div> -->
+            
+        
+      </div>
+    </nav>
+  
+    <!-- TITLE -->
+  <div class="container col-10">
+    <div class="row">
+      <div class="col"></div>
+      <div class="col align-self-center my-4">
+        <h1 class="">Sloth Lovers</h1>
+      </div>
+      <div class="col"></div>
+    </div>
+  </div>
+  
+</header>
+<!-- HERO -->
+<div class="container justify-content-center"">
+  <!-- SLIDER -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../assets/img/babySloth.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Bebé Perezoso</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../assets/img/3clawedSloth.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Perezoso de 3 garras</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../assets/img/2clawedSloth.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Perezoso de 2 garras</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../assets/img/wetSloth.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Perezoso mojado</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<section class="container mt-4">
+
+  <!-- TITULO DE SECCION -->
+  <h2 class="mb-4">Datos sobre los osos perezosos:</h2>
+  <!-- CONTENEDOR DEL CONTENIDO DE LA SECCIÓN -->
+  <div class="row">
+  <!-- SABÍAS QUE ... -->
+  <div class="col-12 col-lg-4 row">
+    <div class="container col-12 col-md-6 col-lg-12">
+      <h3>¿Sabías qué el perezoso ...</h3>
+      <ul>
+        <li>... está recubierto de algas?</li>
+        <li>... es especialmente lento?</li>
+        <li>... se pasa el 90% de su vida boca abajo?</li>
+        <li>... se divide en 2 especies distintas? Son los perezosos de 2 dedos y los perezosos de 3 dedos.</li>
+      </ul>   
+    </div>
+    <div class="container col-12 col-md-6 col-lg-12 row align-items-end">
+      <img src="../assets/img/turtleSloth.png" class="d-block w-100" alt="">
+    </div>
+    <hr class="d-lg-none"> 
+  </div>
+
+  <!-- SUPERPODERES -->
+  <div class="col-12 col-md-6 col-lg-4">
+    <h3>Superpoderes de los perezosos:</h3>
+    <ul>
+      <li>Pueden usar y usan las algas de su pelaje como complemento alimenticio. Además les sirven para camufllarse gracias a su tono verdoso.</li>
+      <li>Solo necesitan defecar y orinar una vez por semana. Eso es debido a su transito lento.</li>
+      <li>¡Són grandes nadadores! Aunque perezosos son terriblemente lentos en la tierra, en el agua son capaces de moverse tres veces más rápido y pueden contener la respiración bajo el agua durante hasta 40 minutos.</li>
+      <li>Ser lentos. ¿Ser lentos? Sí. Ser tan lentos les permite subsistir comiendo poco ya que no necesitan tanta energía. Ademas ser tan lentos les permite pasar desapercibidos a los depredadores, que dependen en gran medida de su vista.</li>
+    </ul>  
+    <img src="../assets/img/fightingSloth.png" class="d-block w-100" alt="">
+    <hr class="d-none d-sm-block d-md-none">
+  </div>
+
+  <!-- DEBILIDADES -->
+  <div class="col-12 col-md-6 col-lg-4">
+    <h3>Debilidades:</h3>
+    <ul>
+      <li>No son conocidos por sus agudos sentidos. Los perezosos de tres dedos nacen sin células cónicas en sus ojos, que son necesarios para detectar colores. Como resultado, ven las cosas en blanco y negro, y también en peor resolución.</li>
+      <li>Cuando evacuan es su momento más vunerable. Aun teniendo que evacuar solo una vez por semana, por algun motivo tienen la costumbre de bajar al suelo, momento en que son más susceptibles de ser visto y alcanzado por sus depredadores</li>
+      <li>Estan en peligro de extinción. Una buena parte de los perezosos se encuentran en peligro de extinción, principalmente debido a la destrucción de su hábitat natural. Dada su lentitud, se ven aún más afectados por estos cambios en los ecosistemas en los que viven.</li>
+    </ul>  
+    <img src="../assets/img/zombieSloth.png" class="d-block w-100" alt="">
+  </div>
+
+  </div>
+</section>
+
+
+  <!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container my-5">
+
+  <footer class="text-center text-lg-start" style="background-color: #3da024;">
+    <div class="container d-flex justify-content-center py-5">
+      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #6e533a;">
+        <i class="fab fa-facebook-f"></i>
+      </button>
+      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #6e533a;">
+        <i class="fab fa-youtube"></i>
+      </button>
+      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #6e533a;">
+        <i class="fab fa-instagram"></i>
+      </button>
+      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #6e533a;">
+        <i class="fab fa-twitter"></i>
+      </button>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+
+  
+</div>
+<!-- End of .container -->
+</footer>
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+</body>
+
+</html>
