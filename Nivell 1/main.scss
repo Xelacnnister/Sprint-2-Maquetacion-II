@@ -1,0 +1,98 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+$theme-colors: (
+    
+);
+$blue:    #0000F7 !default;
+$indigo:  #0B3E65 !default;
+$purple:  #9B1FE8 !default;
+$pink:    #F766AD !default;
+$red:     #F60000 !default;
+$orange:  #EF913D !default;
+$yellow:  #F5C701 !default;
+$green:   #60BC60 !default;
+$teal:    #00777C !default;
+$cyan:    #00F7F7 !default;
+$brown:   #A26330 !default;
+
+$colors: (
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800,
+  "brown":      $brown
+) !default;
+
+// scss-docs-start theme-color-variables
+$primary:       $brown !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-900 !default;
+// scss-docs-end theme-color-variables
+
+.btn-primary {
+    color: #fff;
+    background-color: #A26330;
+    border-color: #A26330;
+  }
+  
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #a26330c7;
+    border-color: #a26330a8;
+  }
+  
+  .btn-check:focus + .btn-primary, .btn-primary:focus {
+    color: #fff;
+    background-color: #a26330c7;
+    border-color: #a26330a8;
+    -webkit-box-shadow: 0 0 0 0.25rem rgba(162, 99, 48, 0.5);
+            box-shadow: 0 0 0 0.25rem rgba(162, 99, 48, 0.5);
+  }
+  
+  .btn-check:checked + .btn-primary,
+  .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active,
+  .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #a26330c7;
+    border-color: #a2633062;
+  }
+  
+  .btn-check:checked + .btn-primary:focus,
+  .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus,
+  .show > .btn-primary.dropdown-toggle:focus {
+    -webkit-box-shadow: 0 0 0 0.25rem rgba(162, 99, 48, 0.5);
+            box-shadow: 0 0 0 0.25rem rgba(162, 99, 48, 0.5);
+  }
+  
+  .btn-primary:disabled, .btn-primary.disabled {
+    color: #fff;
+    background-color: #a26330c7;
+    border-color: #a26330c7;
+  }
+  
+  .bg-primary {
+    background-color: #A26330 !important;
+  }
+  
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
